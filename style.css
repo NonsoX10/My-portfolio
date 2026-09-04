@@ -267,29 +267,61 @@ nav a:hover {
     font-size: 0.95rem;
 }
 
-details {
-    margin-top: 1rem;
+/* Flexbox setup for side-by-side alignment */
+.project-buttons {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 8rem;
 }
 
-.btn-learn-more {
-    display: inline-block;
-    padding: 0.5rem 1.2rem;
+.fa-solid{
+    padding-top:4px;
+padding-left:7px ;
+color: black;
+}
+
+.project-buttons details {
+    margin: 0;
+    padding: 0;
+}
+
+/* Unified styling for both summary and link buttons */
+.btn-project {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 1.2rem;
     background-color: #e63946;
-    color: #ffffff;
-    border-radius: 4px;
+    color: #ffffff !important;
+    border: none;
+    outline: none;
+    border-radius: 6px;
     font-size: 0.85rem;
     font-weight: 600;
+    text-decoration: none;
     cursor: pointer;
     list-style: none;
-    transition: background 0.3s ease;
+    box-shadow: none;
+    line-height: 1.2;
+    box-sizing: border-box;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.btn-learn-more::-webkit-details-marker {
+/* Strip default browser arrows on summary */
+.btn-project::-webkit-details-marker,
+summary.btn-project::marker {
     display: none;
 }
 
-.btn-learn-more:hover {
+/* Hover & active states */
+.btn-project:hover {
     background-color: #c92a37;
+    transform: translateY(-2px);
+}
+
+.btn-project:active {
+    transform: translateY(0);
 }
 
 .expanded-content {
@@ -553,5 +585,14 @@ footer > p:last-child {
 @media (max-width: 600px) {
     .cards {
         grid-template-columns: 1fr;
+    }
+
+    .project-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-project {
+        width: 100%;
     }
 }
