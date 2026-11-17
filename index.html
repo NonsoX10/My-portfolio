@@ -228,14 +228,21 @@
                 </div>
             </div>
 
-            <div>
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
-                <input type="tel" placeholder="Phone Number">
-                <input type="text" placeholder="Subject">
-                <textarea placeholder="Write your Message here" rows="4"></textarea>
+            <form action="https://formsubmit.co/nonsosbusiness10@gmail.com" method="POST">
+                <!-- Formats the email into a clean, readable table -->
+                <input type="hidden" name="_template" value="table">
+
+                <!-- Custom subject line for your inbox -->
+                <input type="hidden" name="_subject" value="New Message from Website!">
+
+                <input type="text" name="Full Name" placeholder="Full Name" required>
+                <input type="email" name="Email Address" placeholder="Email Address" required>
+                <input type="tel" name="Phone Number" placeholder="Phone Number">
+                <input type="text" name="Subject" placeholder="Subject" required>
+                <textarea name="Message" placeholder="Write your Message here" required></textarea>
+
                 <button type="submit">Send Message</button>
-            </div>
+            </form>
         </div>
 
         <div>
@@ -250,7 +257,8 @@
             <div>
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://github.com/NonsoX10" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/uzoechimichael" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/in/uzoechimichael" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
                 <a href="#"><i class="fas fa-globe"></i></a>
             </div>
         </div>

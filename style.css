@@ -424,7 +424,7 @@ footer p {
     color: #a0aec0;
 }
 
-footer div:first-child div:last-child {
+footer div:first-child form:last-child {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -488,11 +488,12 @@ footer > div:nth-child(2) a:hover {
 }
 
 .footer-line {
-    border: none;
+    border-color: #D93643;
     height: 1px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(233, 8, 8, 0.1);
     margin: 2rem auto;
     max-width: 1200px;
+
 }
 
 footer > p:last-child {
