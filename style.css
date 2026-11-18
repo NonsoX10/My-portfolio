@@ -84,7 +84,7 @@ nav a:hover {
     background: radial-gradient(circle at 10% 20%, rgba(230, 57, 70, 0.15) 0%, transparent 40%);
 }
 
-.hero > div {
+.hero>div {
     max-width: 1200px;
     width: 100%;
     display: grid;
@@ -144,20 +144,20 @@ nav a:hover {
     margin: 0 auto;
 }
 
-.service > h2 {
+.service>h2 {
     font-size: 2rem;
     color: #ffffff;
     letter-spacing: 2px;
     margin-bottom: 1rem;
 }
 
-.service > p {
+.service>p {
     color: #a0aec0;
     margin-bottom: 5rem;
     font-size: 1.05rem;
 }
 
-.service > p b {
+.service>p b {
     color: #e63946;
 }
 
@@ -175,10 +175,21 @@ nav a:hover {
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.card:nth-child(1) { transform: translateY(-30px); }
-.card:nth-child(2) { transform: translateY(15px); }
-.card:nth-child(3) { transform: translateY(-30px); }
-.card:nth-child(4) { transform: translateY(15px); }
+.card:nth-child(1) {
+    transform: translateY(-30px);
+}
+
+.card:nth-child(2) {
+    transform: translateY(15px);
+}
+
+.card:nth-child(3) {
+    transform: translateY(-30px);
+}
+
+.card:nth-child(4) {
+    transform: translateY(15px);
+}
 
 .card:hover {
     transform: translateY(-10px) !important;
@@ -213,7 +224,7 @@ nav a:hover {
     margin: 0 auto;
 }
 
-.projects-section > h2 {
+.projects-section>h2 {
     font-size: 2rem;
     color: #ffffff;
     margin-bottom: 3rem;
@@ -275,10 +286,10 @@ nav a:hover {
     margin-top: 8rem;
 }
 
-.fa-solid{
-    padding-top:4px;
-padding-left:7px ;
-color: black;
+.fa-solid {
+    padding-top: 4px;
+    padding-left: 7px;
+    color: black;
 }
 
 .project-buttons details {
@@ -406,7 +417,7 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-footer > div:first-child {
+footer>div:first-child {
     max-width: 1200px;
     margin: 0 auto 4rem auto;
     display: grid;
@@ -461,7 +472,51 @@ footer button[type="submit"]:hover {
     background: #c92a37;
 }
 
-footer > div:nth-child(2) {
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #9ca3af;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #374151;
+}
+
+.divider::before {
+    margin-right: 12px;
+}
+
+.divider::after {
+    margin-left: 12px;
+}
+
+.wa_link {
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    background: #e63946;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.wa_link:hover {
+    background: #c92a37;
+
+}
+
+footer>div:nth-child(2) {
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 2rem;
@@ -470,12 +525,12 @@ footer > div:nth-child(2) {
     align-items: center;
 }
 
-footer > div:nth-child(2) p {
+footer>div:nth-child(2) p {
     font-weight: 700;
     color: #ffffff;
 }
 
-footer > div:nth-child(2) a {
+footer>div:nth-child(2) a {
     color: #a0aec0;
     text-decoration: none;
     margin: 0 0.5rem;
@@ -483,7 +538,7 @@ footer > div:nth-child(2) a {
     font-size: 0.8rem;
 }
 
-footer > div:nth-child(2) a:hover {
+footer>div:nth-child(2) a:hover {
     color: #e63946;
 }
 
@@ -496,7 +551,7 @@ footer > div:nth-child(2) a:hover {
 
 }
 
-footer > p:last-child {
+footer>p:last-child {
     text-align: center;
     margin-top: 1.5rem;
     font-size: 0.85rem;
@@ -515,8 +570,8 @@ footer > p:last-child {
         transform: none !important;
     }
 
-    .hero > div,
-    footer > div:first-child {
+    .hero>div,
+    footer>div:first-child {
         grid-template-columns: 1fr;
     }
 }
@@ -576,7 +631,7 @@ footer > p:last-child {
         height: 200px;
     }
 
-    footer > div:nth-child(2) {
+    footer>div:nth-child(2) {
         flex-direction: column;
         gap: 1.5rem;
         text-align: center;
